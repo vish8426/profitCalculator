@@ -3,39 +3,32 @@
 // Create Function for Best Times to Buy & Sell
 int profit(int array[], int size)
 {
-    int i, memSell, memBuy, memIndex, profit;
-
-    memBuy = array[0];
-
-    for(i=0; i<=size-1; i++)
-    {
-        if(array[i] <= memBuy)
-        {
-            memBuy = array[i];
-            memIndex = i;
-        }
-    }
-
-    if(memIndex == size-1)
-    {
-        return 0;
-    }
-
-    memSell = array[memIndex + 1];
-
-    for(i=memIndex+1; i<size; i++)
-    {
-        if(array[i] > memSell)
-        {
-            memSell = array[i];
-        }
-    }
+    // Handle Empty or Single Element Arrays
+    if(!array || size <= 1) return 0;
     
-    printf("\nFunction Passed\n");
-    printf("Sell Value: %d\n", memSell);
-    printf("Buy Value: %d\n", memBuy);
+    // Define Variables
+    int minPrice = array[0];
+    int maxProfit = 0;
 
-    profit = memSell - memBuy;
+    // Unroll Loop for better CPU Pipeline
+    int i; 
 
-    return profit;
+    // Single Pass Solution
+    for(i=1; i<size; i++) 
+    {
+        // Update Minimum Price upto this Time
+        if(array[i] < minPrice)
+        {
+            minPrice = array[i];
+        }
+        
+        // Check if Selling at Current Price gives better Profit
+        int currentProfit = array[i] - minPrice;
+        if(currentProfit > maxProfit)
+        {
+            maxProfit = currentProfit;
+        }
+    }
+
+    return maxProfit;
 }
