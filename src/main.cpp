@@ -6,19 +6,19 @@ int main()
 {
     // Define Variables 
     int result;
-    int prices[] = {7,1,5,3,6,4};
+    int prices[] = {7,6,4,3,1};
     int size = sizeof(prices)/sizeof(prices[0]);
 
     // printf("Size: %d\n", size);
-    printf("Prices Array: ");
+    fprintf(stdout, "Prices Array: ");
 
     for(int i=0; i<size; i++)
     {
-        printf("%d ", prices[i]);
+        fprintf(stdout, "%d ", prices[i]);
     }
 
     result = profit(prices, size);
-    printf("\nCalculated Profit: %d\n", result);
+    fprintf(stdout, "\nCalculated Profit: %d\n", result);
 
     return 0;
 }
