@@ -32,7 +32,7 @@ prices = [7, 6, 4, 3, 1]
 ## Solution Approach
 The solution uses an efficient single-pass algorithm with a time complexity of \(O(n)\). The key idea is to track the minimum price encountered so far and calculate the profit by comparing the current price with the minimum price. The maximum profit is updated whenever a higher profit is found.
 
-## Installation and Usage
+## Installation & Usage
 1. Clone the repository:
     ```bash
     git clone https://github.com/your-username/profitCalculator.git
