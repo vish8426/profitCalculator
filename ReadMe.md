@@ -50,4 +50,9 @@ To verify the correctness of the solution, execute unit tests covering various s
 Contributions are welcome! Feel free to submit issues or pull requests.
 
 ## License
+<<<<<<< HEAD
 This project is licensed under the [MIT License](LICENSE).
+=======
+This project is licensed under the [MIT License](LICENSE).
+
+>>>>>>> 93c9c8b8a59551ff48f333a5b9a1873a4199c7d8
