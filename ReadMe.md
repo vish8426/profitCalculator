@@ -1,7 +1,7 @@
 # profitCalculator
 
 ## Problem Description
-The **121. Best Time to Buy and Sell Stock** problem involves determining the maximum profit that can be achieved by buying and selling a single stock within a given period. The input is an array `prices`, where `prices[i]` represents the stock price on the ith day. The objective is to buy the stock on one day and sell it on a future day to maximize profit. If no profitable transaction is possible, the function should return `0`.
+The **Best Time to Buy and Sell Stock** problem involves determining the maximum profit that can be achieved by buying and selling a single stock within a given period. The input is an array `prices`, where `prices[i]` represents the stock price on the **ith** day. The objective is to buy the stock on one day and sell it on a future day to maximize profit. If no profitable transaction is possible, the function should return `0`.
 
 ### Example 1
 **Input:**
