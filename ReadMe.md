@@ -23,7 +23,7 @@ prices = [7, 6, 4, 3, 1]
 ```plaintext
 0
 ```
-**Explanation:** No profitable transaction is possible, resulting in a profit of `0`.
+**Explanation:** No Profitable Transaction is Possible - Resulting in a Profit of `0`.
 
 ## Constraints
 - \(1 \leq \text{prices.length} \leq 10^5\)
@@ -50,9 +50,4 @@ To verify the correctness of the solution, execute unit tests covering various s
 Contributions are welcome! Feel free to submit issues or pull requests.
 
 ## License
-<<<<<<< HEAD
 This project is licensed under the [MIT License](LICENSE).
-=======
-This project is licensed under the [MIT License](LICENSE).
-
->>>>>>> 93c9c8b8a59551ff48f333a5b9a1873a4199c7d8
